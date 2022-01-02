@@ -119,24 +119,75 @@ public class MainActivity extends AppCompatActivity {
                 code = "Test";
                 break;
             case 1:
-            case 2:
                 img = iconHypercube;
                 name = "Exoy Hypercube";
                 code = "Hypercube";
                 break;
+            case 2:
+                img = iconHypercube;
+                name = "Exoy Ultra Dense Hypercube";
+                code = "Hypercube";
+                break;
             case 3:
-            case 4:
                 img = iconDodecahedron;
                 name = "Exoy Dodecahedron";
                 code = "Dodecahedron";
                 break;
+            case 4:
+                img = iconDodecahedron;
+                name = "Exoy Ultra Dense Dodecahedron";
+                code = "Dodecahedron";
+                break;
             case 5:
-            case 6:
                 img = iconMirror;
                 name = "Exoy Mirror";
                 code = "Mirror";
                 break;
-
+            case 6:
+                img = iconMirror;
+                name = "Exoy Ultra Dense Mirror";
+                code = "Mirror";
+                break;
+            case 7:
+                img = iconHypercube;
+                name = "Exoy Icosahedron";
+                code = "Hypercube";
+                break;
+            case 8:
+                img = iconHypercube;
+                name = "Exoy Ultra Dense Icosahedron";
+                code = "Hypercube";
+                break;
+            case 9:
+                img = iconHypercube;
+                name = "Exoy Tetrahedron";
+                code = "Hypercube";
+                break;
+            case 10:
+                img = iconHypercube;
+                name = "Exoy Ultra Dense Tetrahedron";
+                code = "Hypercube";
+                break;
+            case 11:
+                img = iconHypercube;
+                name = "Exoy Hexagon";
+                code = "Hypercube";
+                break;
+            case 12:
+                img = iconHypercube;
+                name = "Exoy Ultra Dense Hexagon";
+                code = "Hypercube";
+                break;
+            case 13:
+                img = iconHypercube;
+                name = "Exoy Sound Visualiser";
+                code = "Hypercube";
+                break;
+            case 14:
+                img = iconHypercube;
+                name = "Exoy Ultra Dense Sound Visualiser";
+                code = "Hypercube";
+                break;
         }
         name = name + " " + device.getSize() + " inch";
         code = code + " #" + device.getID();
