@@ -39,8 +39,10 @@ public class MainActivity extends AppCompatActivity {
 
     ListView deviceLV;
     Bitmap iconHypercube;
+    Bitmap iconUDHypercube;
     Bitmap iconDodecahedron;
     Bitmap iconMirror;
+    Bitmap iconInfinityObject;
     Button refreshBtn;
 
     @Override
@@ -114,9 +116,9 @@ public class MainActivity extends AppCompatActivity {
         String code = "";
         switch (device.getType()) {
             case 0:
-                img = iconHypercube;
+                img = iconInfinityObject;
                 name = "Exoy Test";
-                code = "Test";
+                code = "Test Product";
                 break;
             case 1:
                 img = iconHypercube;
@@ -124,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
                 code = "Hypercube";
                 break;
             case 2:
-                img = iconHypercube;
+                img = iconUDHypercube;
                 name = "Exoy Ultra Dense Hypercube";
                 code = "Hypercube";
                 break;
@@ -149,45 +151,49 @@ public class MainActivity extends AppCompatActivity {
                 code = "Mirror";
                 break;
             case 7:
-                img = iconHypercube;
+                img = iconInfinityObject;
                 name = "Exoy Icosahedron";
-                code = "Hypercube";
+                code = "Icosahedron";
                 break;
             case 8:
-                img = iconHypercube;
+                img = iconInfinityObject;
                 name = "Exoy Ultra Dense Icosahedron";
-                code = "Hypercube";
+                code = "Icosahedron";
                 break;
             case 9:
-                img = iconHypercube;
+                img = iconInfinityObject;
                 name = "Exoy Tetrahedron";
-                code = "Hypercube";
+                code = "Tetrahedron";
                 break;
             case 10:
-                img = iconHypercube;
+                img = iconInfinityObject;
                 name = "Exoy Ultra Dense Tetrahedron";
-                code = "Hypercube";
+                code = "Tetrahedron";
                 break;
             case 11:
-                img = iconHypercube;
+                img = iconInfinityObject;
                 name = "Exoy Hexagon";
-                code = "Hypercube";
+                code = "Hexagon";
                 break;
             case 12:
-                img = iconHypercube;
+                img = iconInfinityObject;
                 name = "Exoy Ultra Dense Hexagon";
-                code = "Hypercube";
+                code = "Hexagon";
                 break;
             case 13:
-                img = iconHypercube;
+                img = iconInfinityObject;
                 name = "Exoy Sound Visualiser";
-                code = "Hypercube";
+                code = "Sound Visualiser";
                 break;
             case 14:
-                img = iconHypercube;
+                img = iconInfinityObject;
                 name = "Exoy Ultra Dense Sound Visualiser";
-                code = "Hypercube";
+                code = "Sound Visualiser";
                 break;
+            default:
+                img = iconInfinityObject;
+                name = "Exoy Infinity Object";
+                code = "Infinity Object";
         }
         name = name + " " + device.getSize() + " inch";
         code = code + " #" + device.getID();
