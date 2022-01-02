@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/deviceIV"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/hypercube" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/deviceNameTV"
+                android:layout_width="218dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/muller_bold"
+                android:gravity="center"
+                android:text="Exoy Hypercube"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/deviceCodeTV"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/muller_medium"
+                android:gravity="center"
+                android:text="Hypercube #0" />
+
+            <Button
+                android:id="@+id/deviceConnectBtn"
+                android:layout_width="123dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:text="CONNECT" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

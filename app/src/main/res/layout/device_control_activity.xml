@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/powerBtn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/power"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/effectBtn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="@drawable/effect"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/speedLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/speedTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/muller_regular"
+                android:text="Speed"
+                android:textSize="20sp" />
+
+            <SeekBar
+                android:id="@+id/speedSB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="250"
+                android:paddingTop="10dp"
+                android:progress="100" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/brightnessLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/brightnessTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/muller_regular"
+                android:text="Brightness"
+                android:textSize="20sp" />
+
+            <SeekBar
+                android:id="@+id/brightnessSB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="155"
+                android:paddingTop="10dp"
+                android:progress="100" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/BGbrightnessLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/BGbrightnessTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/muller_regular"
+                android:text="Background Brightness"
+                android:textSize="20sp" />
+
+            <SeekBar
+                android:id="@+id/BGbrightnessSB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="255"
+                android:paddingTop="10dp"
+                android:progress="100" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/silenceCalibrationTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muller_regular"
+                android:text="Silence Calibration"
+                android:textAlignment="viewStart"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/silenceCalibrationBtn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CALIBRATE" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/restartModeBtn"
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_weight="1"
+                android:text="RESTART IN ACCESS POINT MODE" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/effectAutoChangeTV"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muller_regular"
+                android:paddingRight="50dp"
+                android:text="Automatic Effect Change"
+                android:textAlignment="viewStart"
+                android:textSize="20sp" />
+
+            <Switch
+                android:id="@+id/effectChangeS"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <com.skydoves.colorpickerview.ColorPickerView
+            android:id="@+id/colorPickerView"
+            android:layout_width="203dp"
+            android:layout_height="187dp"
+            android:layout_gravity="center"
+            android:paddingTop="60dp"
+            android:visibility="visible"
+            app:selector="@drawable/wheel" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
